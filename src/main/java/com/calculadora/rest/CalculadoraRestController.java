@@ -14,4 +14,10 @@ public class CalculadoraRestController {
 		Double res=op1 + op2;
 		return res;		
 	}
+	
+	@GetMapping(value="/restar/{op1}/{op2}")
+	public Double restar(@PathVariable("op1") Double op1, @PathVariable("op2") Double op2) {
+		Double res=op1 -op2;
+		return res;
+	}
 }

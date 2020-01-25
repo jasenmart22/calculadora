@@ -15,7 +15,7 @@
 	<description>Calculadora project for Spring Boot</description>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>1.8</java.version>		
 	</properties>
 
 	<dependencies>
@@ -27,6 +27,14 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+		
+		<dependency>
+		    <groupId>io.corp.calculator</groupId>
+		    <artifactId>tracer</artifactId>
+		    <version>1.0.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/lib/tracer-1.0.0.jar</systemPath>
 		</dependency>
 		
 		<dependency>
@@ -47,7 +55,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+			</plugin>			
 		</plugins>
 	</build>
 
